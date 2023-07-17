@@ -19,4 +19,9 @@
         android:text="to second activity"
         android:textAllCaps="false" />
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
 </LinearLayout>

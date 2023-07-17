@@ -14,8 +14,8 @@ class Test2Interceptor : IInterceptor {
     }
 
     override fun process(postcard: Postcard?, callback: InterceptorCallback?) {
-//        callback?.onContinue(postcard)
-        callback?.onInterrupt(RuntimeException("oops..."))
+        callback?.onContinue(postcard)
+//        callback?.onInterrupt(RuntimeException("oops..."))
         Log.i("TestInterceptor", "process: Test2Interceptor == ")
     }
 }

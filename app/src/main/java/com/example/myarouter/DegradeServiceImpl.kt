@@ -10,10 +10,10 @@ import com.alibaba.android.arouter.facade.service.DegradeService
 @Route(path = "/xxx/xxx")
 class DegradeServiceImpl : DegradeService {
     override fun init(context: Context?) {
-        Log.i("wmkwmk", "init 全局降级策略。。")
+        Log.i("TestInterceptor", "init 全局降级策略。。")
     }
 
     override fun onLost(context: Context?, postcard: Postcard?) {
-        Log.i("wmkwmk", "全局降级策略..onLost..")
+        Log.i("TestInterceptor", "全局降级策略..onLost..")
     }
 }
